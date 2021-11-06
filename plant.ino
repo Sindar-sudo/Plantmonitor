@@ -14,7 +14,7 @@ const char *PWD = "wifipassword";
 const char* mqttServer = "192.168.x.xxx"; //your MQTT server here
 WiFiClient espClient;
 PubSubClient client(espClient);
-const char* mqtttopic = "plant/plant1";
+const char* mqtttopic = "plant/plant1"; //mqtt topic where the data will be received.
 
 void setup() { 
   Serial.begin(9600); //for troubleshooting
